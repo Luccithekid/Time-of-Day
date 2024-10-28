@@ -1,14 +1,29 @@
-const d = new Date()
+// Create new Date object
+const d = new Date();
+// Store the value of getHours in variable
 let hour = d.getHours();
 
-console.log(hour)
+console.log(hour);
 
 if (hour < 12) {
-    console.log('It is morning')
+  // Morning
+document.getElementById("greeting").innerText = "Good Morning";
+document.getElementById("image").src="img/sun.png";
+} else if (hour < 17) {
+  // Afternoon
+document.getElementById("greeting").innerText = "Good Afternoon";
 }
-else if (hour < 17) {
-   console.log('It is the afternoon')
-} 
- else {
-    console.log('It is night')
-} 
+else {
+  // Night
+document.getElementById("greeting").innerText = "Good Night";
+document.getElementById("image").src="img/";
+}
+
+
+
+
+
+//let greetingElement = document.getElementById("greeting");
+//console.log(greetingElement);
+
+//document.getElementById("greeting").innerText = "Good Night";
